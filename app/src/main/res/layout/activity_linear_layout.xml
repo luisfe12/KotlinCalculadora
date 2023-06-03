@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinearLayout"
+    android:orientation="vertical">
+    
+<!--    Repsonsive sin weithsum pero igual usa el layoutweight
+de los elemtos del Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:background="#1EFA89"/>
+        <View
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:background="#1812C5"/>
+    </LinearLayout>
+    
+<!--    CREAREMSO EL RESPONSIVE CON LIENARLAYOUT
+el weigthsum indica cuantos componete tendra el linearlayout en este caso son 3
+y cad auno de estos debe tener el valor weigth de 1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="30sp">
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:background="#A1830A"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:background="#676662"
+            android:layout_weight="1"/>
+        
+        <View
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:background="#CD4A4A"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30sp">
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:background="#DD08125A"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="190sp"
+                android:layout_height="150sp"
+                android:background="#676662"/>
+            <View
+                android:layout_width="190sp"
+                android:layout_height="150sp"
+                android:background="#676662"
+                android:layout_marginLeft="30sp"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:background="#DD08125A"
+            android:layout_marginTop="30sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30sp">
+
+        <View
+            android:layout_width="150sp"
+            android:layout_height="match_parent"
+            android:background="#051665"/>
+        <View
+            android:layout_width="100sp"
+            android:layout_height="match_parent"
+            android:background="#17E1A2"
+            android:layout_marginLeft="10dp"/>
+        <View
+            android:layout_width="100sp"
+            android:layout_height="match_parent"
+            android:background="#E1589F"
+            android:layout_marginLeft="10dp"/>
+        <View
+            android:layout_width="100sp"
+            android:layout_height="match_parent"
+            android:background="#F3EF46"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30sp">
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:background="#259A9A"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_marginTop="10dp"
+            android:background="#5B7CDF"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_marginTop="10dp"
+            android:background="#5B7CDF"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="#8B9CD1"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:layout_marginTop="10dp"
+            android:background="#84DFDD"/>
+
+        
+    </LinearLayout>
+</LinearLayout>

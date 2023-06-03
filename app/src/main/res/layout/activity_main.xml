@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--match parent es para las dimensiones del padre -->
+    <TextView
+        android:id="@+id/tvEjemplo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textAllCaps="true"
+        android:fontFamily="@font/bralis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextTextPersonName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:text=""-->
+<!--        android:hint="Name"-->
+<!--        android:drawableLeft="@drawable/ic_email"-->
+<!--        android:drawablePadding="5dp"-->
+<!--        android:paddingLeft="10dp"-->
+<!--        android:background="@drawable/style_etbg"-->
+<!--        android:paddingTop="10dp"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        android:textColorHint="#414549"-->
+<!--        android:textColor="@color/cardview_shadow_end_color"-->
+<!--        tools:layout_editor_absoluteX="99dp"-->
+<!--        tools:layout_editor_absoluteY="283dp" />-->
+
+    <!--icono al inicio con star y paddinf
+    para evitar ese alerta roja del editext se debe usar lienarlayout-->
+    <EditText
+        android:id="@+id/etEjemplo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textCapSentences|textAutoCorrect"
+        android:text="16432879"
+        android:hint="Name"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="5dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/style_etbg"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="#BC650E"
+        android:textColorHighlight="#E4AC23"
+        android:textColor="#44494A"
+        android:digits="123456789 "
+        android:gravity="center"
+        app:layout_editor_absoluteX="99dp"
+        app:layout_editor_absoluteY="283dp"
+        />
+
+    <AutoCompleteTextView
+        android:id="@+id/actvEjemplo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="AutoCompleteTextView" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/matvEjemplo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="MultiAutoCompleteTextView" />
+    <!--    <EditText-->
+<!--        android:id="@+id/cdcdcd"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textCapSentences|textAutoCorrect"-->
+<!--        android:text=""-->
+<!--        android:hint="Name"-->
+<!--        android:drawableLeft="@drawable/ic_email"-->
+<!--        android:drawablePadding="5dp"-->
+<!--        android:paddingLeft="10dp"-->
+<!--        android:background="@drawable/style_etbg"-->
+<!--        android:paddingTop="10dp"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        android:textColorHint="@color/material_dynamic_primary10"-->
+<!--        android:textColor="@color/material_on_primary_disabled"-->
+<!--        android:gravity="center"-->
+<!--        app:layout_editor_absoluteX="99dp"-->
+<!--        app:layout_editor_absoluteY="283dp"/>-->
+
+
+</LinearLayout>

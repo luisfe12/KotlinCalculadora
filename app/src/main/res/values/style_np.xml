@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NumberPickerTheme" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">#fff</item>
+        <!--rEMOVER DIVISOR DEL NUMBEPICKER-->
+        <item name="colorControlNormal">@android:color/transparent</item>
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="android:background">#302C2C</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+</resources>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="ExtraText">
+        
+        <ProgressBar
+            android:id="@+id/pbMedium"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ProgressBar
+            android:id="@+id/pbSmall"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ProgressBar
+            android:id="@+id/pbLarge"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ProgressBar
+            android:id="@+id/pbIndeterminate"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"/>
+        <ProgressBar
+            android:id="@+id/pbDeterminate"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="300"
+            android:progress="50"
+            android:progressBackgroundTint="#1FCD45"
+            android:progressTint="#7A15C3"/>
+
+        <ProgressBar
+            android:id="@+id/pbSecondary"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="300"
+            android:progress="50"
+            android:secondaryProgress="100"
+            android:progressBackgroundTint="#1FCD45"
+            android:progressTint="#7A15C3"
+            android:secondaryProgressTint="#0256E6"/>
+        
+        <SeekBar
+            android:id="@+id/sbNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:thumbTint="#770DDD"
+            android:thumb="@drawable/ic_car"
+            android:progressBackgroundTint="#0C43EC"
+            android:progressTint="#D66B0E"
+            android:max="100"
+            android:progress="30"/>
+        <SeekBar
+            android:id="@+id/sbCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="30"
+            android:thumb="@drawable/sb_thumb"
+            android:progressDrawable="@drawable/sb_progress_bg"/>
+        <SeekBar
+            android:id="@+id/sbDoiscrete"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="6"/>
+
+        <View
+            android:id="@+id/vH"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#1938D1"/>
+        
+        <View
+            android:id="@+id/vV"
+            android:layout_width="4dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="#13CA25"/>
+
+        <Chronometer
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <DigitalClock
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TimePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />        
+        <NumberPicker
+            android:id="@+id/npEjemplo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/NumberPickerTheme"/>
+        <TextView
+            android:id="@+id/tvNumberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="es NUP EJEMPLO"/>
+
+        <me.tankery.lib.circularseekbar.CircularSeekBar
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:cs_progress="30"
+            app:cs_max="100"
+            app:cs_negative_enabled="true"
+            app:cs_circle_style="round"
+            app:cs_circle_stroke_width="8dp"
+            app:cs_pointer_stroke_width="24dp"
+            />
+        <!--Isindicator poner el false para que el
+        Usuario pueda calificar-->
+        <RatingBar
+            android:id="@+id/rbEjemplo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:numStars="5"
+            android:isIndicator="false"
+            android:rating="3"
+            android:stepSize="0.5"
+            android:progressBackgroundTint="#6BA7E6"
+            android:progressTint="#ff9955"/>
+<!--            style="@android:style/Widget.Material.Light.RatingBar.Small"-->
+        <TextView
+            android:id="@+id/tvRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3/5"/>
+
+        <SearchView
+            android:id="@+id/svUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:queryHint="Name"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/searchview_bg"
+            android:queryBackground="@android:color/transparent"/>
+        <ListView
+            android:id="@+id/lvUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"/>
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Fecha seleccionada"/>
+
+        <VideoView
+            android:id="@+id/vvWeb"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:backgroundTint="#ff5566"/>
+        
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="1500dp"
+            tools:ignore="WebViewLayout">
+
+            <VideoView
+                android:id="@+id/vvLocal"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_x="56dp"
+                android:layout_y="324dp" />
+
+            <CalendarView
+                android:id="@+id/cvEjemplo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_x="27dp"
+                android:layout_y="-117dp" />
+        </WebView>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCircularWithStroke"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:src="@drawable/shapeable_image"
+            app:shapeAppearanceOverlay="@style/Circular"
+            app:strokeColor="#137EE8"
+            app:strokeWidth="4dp"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCircularRoundSquareWithStroke"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:src="@drawable/shapeable_image"
+            app:shapeAppearanceOverlay="@style/RoundSquare"
+            app:strokeColor="#14C3E3"
+            app:strokeWidth="5dp"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCornerCut"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:src="@drawable/shapeable_image"
+            app:shapeAppearanceOverlay="@style/CornerCut"
+            app:strokeColor="#8A2615"
+            app:strokeWidth="5dp"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivDimondCut"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:src="@drawable/shapeable_image"
+            app:shapeAppearanceOverlay="@style/DimondCut"
+            app:strokeColor="#36BC10"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivSpecificConerCut"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:src="@drawable/shapeable_image"
+            app:shapeAppearanceOverlay="@style/SpecificCornerCut"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivSpecificConerRound"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:src="@drawable/shapeable_image"
+            app:shapeAppearanceOverlay="@style/SpecificCornerRounded"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:src="@drawable/fot_cv_terno"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCircular"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/shapeable_image"
+            app:shapeAppearanceOverlay="@style/Circular"/>
+        
+    </LinearLayout>
+
+        
+
+</ScrollView>

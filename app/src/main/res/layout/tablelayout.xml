@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:stretchColumns="1"
+    android:shrinkColumns="2">
+
+    <TableRow android:background="#022E7C">
+        <TextView
+            android:layout_column="0"
+            android:padding="5dp"
+            android:text="Articulo"
+            android:textColor="#fff"
+            />
+        <TextView
+            android:layout_column="2"
+            android:padding="5dp"
+            android:text="Precio"
+            android:textColor="#fff"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="0"
+            android:padding="5dp"
+            android:text="2kg de naranja" />
+
+        <TextView
+            android:layout_column="2"
+            android:padding="5dp"
+            android:text="2 soles"
+            android:layout_gravity="end"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_column="0"
+            android:padding="5dp"
+            android:text="3 Tortillas" />
+
+        <TextView
+            android:layout_column="2"
+            android:padding="5dp"
+            android:text="6 soles"
+            android:layout_gravity="end"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="0"
+            android:padding="5dp"
+            android:text="5 sushi" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="2"
+            android:padding="5dp"
+            android:text="15 soles"
+            android:layout_gravity="end"/>
+    </TableRow>
+    <View
+        android:layout_height="2dp"
+        android:background="#646AE8"/>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="subtotal"
+            android:padding="5dp"
+            android:textColor="#3AA4C3" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="end"
+            android:padding="5dp"
+            android:text="24 so"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="1"
+            android:text="Cupon del 15% de descuento"
+            android:padding="5dp"
+            android:textColor="#3AA4C3" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="end"
+            android:padding="5dp"
+            android:text="-3.91 so"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="1"
+            android:text="Total"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:background="#022E7C"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="end"
+            android:padding="5dp"
+            android:text="23.7 so"
+            android:textColor="#fff"
+            android:background="#022E7C"/>
+    </TableRow>
+
+
+</TableLayout>
